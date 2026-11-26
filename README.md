@@ -1,40 +1,34 @@
 # 🏆 Innovations-Champions-League
 
-Ein kurzes, interaktives K.-o.-Turnier für den BWL-Unterricht am Gymnasium Laufen.
+Ein interaktives 16er-K.-o.-Turnier über **Innovationen der letzten 100 Jahre**, direkt auf GitHub Pages spielbar.
 
-**Leitfrage:** Welche Innovation der letzten 100 Jahre hat die Wirtschaft und das Leben der Menschen am stärksten verändert?
+**Leitfrage:** Welche Innovation hat Wirtschaft und Gesellschaft am stärksten verändert?
 
-## GitHub Pages aktivieren
+## Website
 
-1. Im Repository auf **Settings** klicken.
-2. Links **Pages** öffnen.
-3. Unter **Build and deployment** bei **Source** die Option **Deploy from a branch** auswählen.
-4. Als Branch **main** und als Ordner **/(root)** festlegen und **Save** klicken.
-5. Anschliessend ist die Seite hier erreichbar:
+https://proflarsschnyder.github.io/innovationschampionsleague/
 
-**https://proflarsschnyder.github.io/innovationschampionsleague/**
+Falls noch nicht aktiviert: Repository → **Settings** → **Pages** → **Deploy from a branch** → `main` / `(root)` → **Save**.
 
-## Gruppenlinks
+## Spielablauf
 
-Jede der drei Gruppen öffnet genau einen Link:
+1. **Jetzt auslosen** anklicken. Es erscheint eine kurze animierte Auslosung mit acht zufälligen Paarungen.
+2. Der gesamte **Turnierbaum** wird angezeigt. Auf die kleinen Fotos klicken, um sie grösser zu sehen.
+3. **Achtelfinale starten** anklicken, dann in jedem Duell nur auf die gewünschte Innovation klicken.
+4. Vor **Viertelfinale**, **Halbfinale**, **Spiel um Platz 3** und **Finale** erscheint jeweils automatisch erneut der aktuelle Turnierbaum.
+5. Am Ende erscheint ein **Siegerpodest** für Platz 1, 2 und 3. Der Turnierverlauf lässt sich ebenfalls anzeigen.
 
-- Gruppe 1: https://proflarsschnyder.github.io/innovationschampionsleague/?gruppe=1
-- Gruppe 2: https://proflarsschnyder.github.io/innovationschampionsleague/?gruppe=2
-- Gruppe 3: https://proflarsschnyder.github.io/innovationschampionsleague/?gruppe=3
+Es gibt acht Achtelfinals, vier Viertelfinals, zwei Halbfinals, ein Spiel um Platz 3 und ein Finale, insgesamt **16 Klickentscheidungen**.
 
-Alternativ können die Lernenden auf der Startseite ihre Gruppe anklicken.
+**Keine Gruppenauswahl, kein Account und keine Texteingabe.** Alle Gruppen öffnen dieselbe Website, jede startet unabhängig eine eigene zufällige Auslosung auf ihrem Gerät. Die Daten werden nur im Browser des jeweiligen Geräts gespeichert. Die Website synchronisiert keine Gruppenstände.
 
-Jede Gruppe erhält bei Spielbeginn eine **eigene zufällige Auslosung** der gleichen 16 Innovationen. Es gibt acht Achtelfinals, vier Viertelfinals, zwei Halbfinals, ein Spiel um Platz 3 und ein Finale, also **16 Klickentscheidungen**. Am Schluss erscheinen Gold, Silber und Bronze auf einem Siegerpodest.
+Ein laufendes Turnier bleibt auch nach dem Neuladen erhalten. Es gibt **keine Rückgängig-Funktion**, nur den **kompletten Neustart** mit neuer Auslosung und Sicherheitsabfrage.
 
-## Bilder hinzufügen
+## Bilder
 
-Die Anwendung ist auf die **exakten Originaldateinamen** abgestimmt. Du musst die heruntergeladenen Bilder nicht umbenennen.
+Die 16 Bilder liegen im Ordner `bilder/`. Die Zuordnung erfolgt direkt über die Namen in `app.js`.
 
-1. Öffne im GitHub-Repository den Ordner `bilder`.
-2. Wähle **Add file → Upload files** und lade die 16 Dateien hinein.
-3. Wähle **Commit changes**.
-
-| Innovation | Exakter Dateiname |
+| Innovation | Dateiname |
 | --- | --- |
 | Fernseher | `Fernseher.jpg` |
 | Antibiotika | `Antibiotika.jpg` |
@@ -53,28 +47,11 @@ Die Anwendung ist auf die **exakten Originaldateinamen** abgestimmt. Du musst di
 | Smartphone | `Smartphone.jpg` |
 | Generative KI | `KI.png` |
 
-**Wichtig:** Gross- und Kleinschreibung sowie die Sonderzeichen müssen übereinstimmen, insbesondere `Düsenflugzeug.jpg`, `3DDrucker.png`, `Industrieroboter.jpeg` und `KI.png`. Falls du die Bilder versehentlich direkt in den Hauptordner hochlädst, versucht die Anwendung auch, sie dort zu laden. Wenn noch kein Bild verfügbar ist, bleibt als Platzhalter ein Emoji sichtbar.
+## Dateien
 
-Tipp: Bilder möglichst als Querformat verwenden und für schnelle Ladezeiten komprimieren.
+- `index.html`: Einstiegspunkt
+- `styles.css`: Design und Animationen
+- `app.js`: Spiel, Auslosung, Runden, Turnierbaum, Bildvergrösserung und Siegerpodest
+- `bilder/`: Bilder der Innovationen
 
-## Bedienung
-
-1. Gruppe auswählen (oder direkten Gruppenlink öffnen).
-2. Auf **Turnier starten** klicken.
-3. Pro Duell gemeinsam diskutieren und eine der beiden grossen Innovationskarten anklicken.
-4. Nach dem Spiel das Podest zeigen. Bei Bedarf lässt sich der gesamte Turnierverlauf aufklappen.
-
-**Keine Registrierung, keine Texteingabe und keine Installation.** Der Stand wird im jeweiligen Browser lokal gespeichert, damit ein versehentliches Neuladen nicht alles löscht. **Wichtig:** Bei einem Gerätewechsel werden die Ergebnisse nicht synchronisiert. Jede Gruppe soll ihr Turnier möglichst auf einem einzigen Gerät spielen.
-
-Mit **Letzte Entscheidung zurück** kann man eine falsche Auswahl korrigieren. **Neu auslosen** setzt das aktuelle Turnier nach Rückfrage zurück.
-
-## Technisches
-
-Die Anwendung läuft vollständig auf GitHub Pages. Dateien:
-
-- `index.html` Einstieg
-- `styles.css` Gestaltung
-- `app.js` Turnierlogik und die 16 Kandidaten
-- `bilder/` selbst hochgeladene Fotos
-
-Keine externen Bibliotheken und kein Backend erforderlich.
+Statische HTML/CSS/JavaScript-Anwendung ohne externe Bibliotheken oder Backend.
