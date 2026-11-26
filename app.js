@@ -440,6 +440,10 @@ app.addEventListener("click",event=>{
   }
 });
 document.addEventListener("click",event=>{
+  if (event.target.closest('[data-action="close-zoom"]')) {
+    closeZoom();
+    return;
+  }
   if (event.target.id==="image-overlay") closeZoom();
 });
 document.addEventListener("keydown",event=>{
