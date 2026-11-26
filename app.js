@@ -22,7 +22,7 @@ const INNOVATIONS = [
   { id: "mobiltelefon", name: "Mobiltelefon", emoji: "📱" },
   { id: "digitalkamera", name: "Digitalkamera", emoji: "📷" },
   { id: "gps", name: "GPS-Navigation", emoji: "🧭" },
-  { id: "dreid-drucker", name: "3D-Drucker", emoji: "🖨️" },
+  { id: "3d-drucker", name: "3D-Drucker", emoji: "🖨️" },
   { id: "musikstreaming", name: "Musikstreaming", emoji: "🎧" },
   { id: "smartphone", name: "Smartphone", emoji: "📲" },
   { id: "ki", name: "Generative KI", emoji: "🤖" }
