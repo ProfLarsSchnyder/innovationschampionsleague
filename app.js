@@ -365,7 +365,7 @@ function renderPodium() {
         ${podiumEntry(bronze,3,"third")}
       </div>
       <div class="results-actions">
-        <button class="primary-button" data-action="print" type="button">Podest speichern / drucken</button>
+        
         <button class="small-button" data-action="results-bracket" type="button">▦ Turnierbaum anzeigen</button>
         ${restartButton()}
       </div>
