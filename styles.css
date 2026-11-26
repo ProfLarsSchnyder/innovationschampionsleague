@@ -271,3 +271,7 @@ button.tree-team:hover { background:#294781; border-color:var(--cyan); }
   object-fit: contain;
   object-position: center;
 }
+
+/* Kurzer Arbeitsauftrag unter dem Siegerpodest. */
+.podium-instruction { max-width:780px; margin:18px auto 12px; text-align:center; line-height:1.65; font-size:1rem; color:#d6e3ff; }
+.podium-instruction strong { color:#fff; }
