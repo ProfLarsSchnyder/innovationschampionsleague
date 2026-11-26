@@ -49,7 +49,7 @@ Bilder selbst in GitHub hochladen:
 | Mobiltelefon | `mobiltelefon.jpg` |
 | Digitalkamera | `digitalkamera.jpg` |
 | GPS-Navigation | `gps.jpg` |
-| 3D-Drucker | `dreid-drucker.jpg` |
+| 3D-Drucker | `3d-drucker.jpg` |
 | Musikstreaming | `musikstreaming.jpg` |
 | Smartphone | `smartphone.jpg` |
 | Generative KI | `ki.jpg` |
