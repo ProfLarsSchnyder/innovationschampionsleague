@@ -364,8 +364,8 @@ function renderPodium() {
         ${podiumEntry(gold,1,"first")}
         ${podiumEntry(bronze,3,"third")}
       </div>
+      <p class="podium-instruction"><strong>Auftrag:</strong> Machen Sie mit der Taste <strong>Print Screen</strong> einen Screenshot Ihres Siegerpodests und fügen Sie ihn in OneNote im <strong>«Platz zur Zusammenarbeit»</strong> ein.</p>
       <div class="results-actions">
-        
         <button class="small-button" data-action="results-bracket" type="button">▦ Turnierbaum anzeigen</button>
         ${restartButton()}
       </div>
