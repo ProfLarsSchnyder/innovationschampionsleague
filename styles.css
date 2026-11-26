@@ -263,3 +263,11 @@ button.tree-team:hover { background:#294781; border-color:var(--cyan); }
 @media print {
   .results-tree, .results-actions, .modal-close, .image-overlay { display:none !important; }
 }
+
+/* Fotos vollständig anzeigen, ohne Beschnitt, in Duellen, Turnierbaum und auf dem Podest. */
+.contender-image img,
+.podium-picture img,
+.tree-thumb-image img {
+  object-fit: contain;
+  object-position: center;
+}
