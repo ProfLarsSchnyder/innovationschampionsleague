@@ -4,9 +4,8 @@
  * Innovations-Champions-League, Gymnasium Laufen.
  * Ohne Framework, Registrierung oder Server.
  *
- * Eigene Bilder: /bilder/<id>.jpg
- * Alternativ werden .jpeg, .png und .webp automatisch gesucht.
- * Die IDs stehen in der Liste INNOVATIONS weiter unten.
+ * Eigene Bilder: /bilder/<exakter Dateiname>.
+ * Die 16 Zuordnungen stehen in IMAGE_FILES.
  */
 
 const INNOVATIONS = [
@@ -27,6 +26,26 @@ const INNOVATIONS = [
   { id: "smartphone", name: "Smartphone", emoji: "📲" },
   { id: "ki", name: "Generative KI", emoji: "🤖" }
 ];
+
+// Exakte Dateinamen der vom Lehrer vorbereiteten Bilder (Gross-/Kleinschreibung beachten).
+const IMAGE_FILES = {
+  "fernseher": "Fernseher.jpg",
+  "antibiotika": "Antibiotika.jpg",
+  "waschmaschine": "Waschmaschine.png",
+  "mikrowelle": "Mikrowelle.jpg",
+  "computer": "Computer.jpg",
+  "duesenflugzeug": "Düsenflugzeug.jpg",
+  "solarzellen": "Solarzellen.jpg",
+  "industrieroboter": "Industrieroboter.jpeg",
+  "internet": "Internet.jpg",
+  "mobiltelefon": "Mobiltelefon.jpg",
+  "digitalkamera": "Digitalkamera.jpg",
+  "gps": "GPS.jpg",
+  "3d-drucker": "3DDrucker.png",
+  "musikstreaming": "Musikstreaming.jpg",
+  "smartphone": "Smartphone.jpg",
+  "ki": "KI.png"
+};
 
 const BY_ID = Object.fromEntries(INNOVATIONS.map(item => [item.id, item]));
 const ORDER = [
@@ -151,18 +170,24 @@ function groupToolbar() {
 function imageBox(item, context) {
   return `<div class="${context}">
     <span class="contender-emoji" aria-hidden="true">${item.emoji}</span>
-    <img data-photo="${item.id}" src="./bilder/${item.id}.jpg" alt="${item.name}" loading="eager" decoding="async">
+    <img data-photo="${item.id}" src="./bilder/${IMAGE_FILES[item.id]}" alt="${item.name}" loading="eager" decoding="async">
   </div>`;
 }
 function initializeImages() {
   document.querySelectorAll("img[data-photo]").forEach(img => {
     const id = img.dataset.photo;
-    const formats = ["jpg", "jpeg", "png", "webp"];
-    let idx = 0;
+    const filename = IMAGE_FILES[id];
+    if (!filename) { img.remove(); return; }
+    // Falls die Dateien versehentlich ins Hauptverzeichnis hochgeladen werden,
+    // werden sie auch von dort eingelesen.
+    let triedRoot = false;
     img.addEventListener("error", () => {
-      idx += 1;
-      if (idx < formats.length) img.src = "./bilder/" + id + "." + formats[idx];
-      else img.remove(); // Das Emoji darunter bleibt sichtbar.
+      if (!triedRoot) {
+        triedRoot = true;
+        img.src = "./" + encodeURIComponent(filename);
+      } else {
+        img.remove(); // Das Emoji darunter bleibt als Platzhalter sichtbar.
+      }
     });
   });
 }
