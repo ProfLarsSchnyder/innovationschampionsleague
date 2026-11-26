@@ -172,9 +172,7 @@ function header() {
     <span class="top-note">DIE LETZTEN 100 JAHRE</span>
   </header>`;
 }
-function footer() {
-  return '<footer class="footer">16 Innovationen · Eine Frage: Welche hat Wirtschaft und Gesellschaft am stärksten verändert?</footer>';
-}
+function footer() { return ""; }
 function restartButton() {
   return '<button type="button" class="small-button" data-action="restart">↻ Kompletter Neustart</button>';
 }
@@ -203,9 +201,6 @@ function renderLanding() {
       <div class="eyebrow">Das grosse Innovationsturnier</div>
       <h1>INNOVATIONS<br><span>CHAMPIONS LEAGUE</span></h1>
       <p class="subtitle">Welche Innovation der letzten 100 Jahre hat Wirtschaft und Gesellschaft am stärksten verändert?</p>
-      <div class="rules">
-        <span class="chip">16 Innovationen</span><span class="chip">Zufällige Auslosung</span><span class="chip">Einfach per Klick entscheiden</span>
-      </div>
       <button class="primary-button launch-button" type="button" data-action="start">🏆 Jetzt auslosen</button>
       <p class="landing-note">Nach der Auslosung sehen Sie den vollständigen Turnierbaum. Danach beginnt das Achtelfinale.</p>
     </section>
