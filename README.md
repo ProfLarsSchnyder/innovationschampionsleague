@@ -28,35 +28,34 @@ Jede Gruppe erhält bei Spielbeginn eine **eigene zufällige Auslosung** der gle
 
 ## Bilder hinzufügen
 
-Bilder selbst in GitHub hochladen:
+Die Anwendung ist auf die **exakten Originaldateinamen** abgestimmt. Du musst die heruntergeladenen Bilder nicht umbenennen.
 
-1. Im Repository den Ordner `bilder` öffnen.
-2. **Add file → Upload files** auswählen.
-3. 16 Bilder hochladen. Wichtig: Dateinamen müssen der folgenden Tabelle entsprechen. Die Endungen **.jpg, .jpeg, .png oder .webp** werden automatisch erkannt.
-4. **Commit changes** anklicken.
+1. Öffne im GitHub-Repository den Ordner `bilder`.
+2. Wähle **Add file → Upload files** und lade die 16 Dateien hinein.
+3. Wähle **Commit changes**.
 
-| Innovation | Bildname |
+| Innovation | Exakter Dateiname |
 | --- | --- |
-| Fernseher | `fernseher.jpg` |
-| Antibiotika | `antibiotika.jpg` |
-| Vollautomatische Waschmaschine | `waschmaschine.jpg` |
-| Mikrowelle | `mikrowelle.jpg` |
-| Computer | `computer.jpg` |
-| Düsenflugzeug | `duesenflugzeug.jpg` |
-| Solarzellen | `solarzellen.jpg` |
-| Industrieroboter | `industrieroboter.jpg` |
-| Internet | `internet.jpg` |
-| Mobiltelefon | `mobiltelefon.jpg` |
-| Digitalkamera | `digitalkamera.jpg` |
-| GPS-Navigation | `gps.jpg` |
-| 3D-Drucker | `3d-drucker.jpg` |
-| Musikstreaming | `musikstreaming.jpg` |
-| Smartphone | `smartphone.jpg` |
-| Generative KI | `ki.jpg` |
+| Fernseher | `Fernseher.jpg` |
+| Antibiotika | `Antibiotika.jpg` |
+| Vollautomatische Waschmaschine | `Waschmaschine.png` |
+| Mikrowelle | `Mikrowelle.jpg` |
+| Computer | `Computer.jpg` |
+| Düsenflugzeug | `Düsenflugzeug.jpg` |
+| Solarzellen | `Solarzellen.jpg` |
+| Industrieroboter | `Industrieroboter.jpeg` |
+| Internet | `Internet.jpg` |
+| Mobiltelefon | `Mobiltelefon.jpg` |
+| Digitalkamera | `Digitalkamera.jpg` |
+| GPS-Navigation | `GPS.jpg` |
+| 3D-Drucker | `3DDrucker.png` |
+| Musikstreaming | `Musikstreaming.jpg` |
+| Smartphone | `Smartphone.jpg` |
+| Generative KI | `KI.png` |
 
-Die Endung darf stattdessen auch **.png, .webp oder .jpeg** sein. Den Namen vor dem Punkt bitte genau übernehmen. Ohne Bild erscheint automatisch ein passendes Emoji, sodass das Spiel sofort benutzbar bleibt.
+**Wichtig:** Gross- und Kleinschreibung sowie die Sonderzeichen müssen übereinstimmen, insbesondere `Düsenflugzeug.jpg`, `3DDrucker.png`, `Industrieroboter.jpeg` und `KI.png`. Falls du die Bilder versehentlich direkt in den Hauptordner hochlädst, versucht die Anwendung auch, sie dort zu laden. Wenn noch kein Bild verfügbar ist, bleibt als Platzhalter ein Emoji sichtbar.
 
-Tipp: Bilder im Querformat nutzen und nach Möglichkeit unter 500 KB pro Bild komprimieren.
+Tipp: Bilder möglichst als Querformat verwenden und für schnelle Ladezeiten komprimieren.
 
 ## Bedienung
 
